@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessingGame</title>
+</head>
+<body>
+
+    <script>
+        while(true){
+
+            let number = prompt("Guess a number between 1 and 10");
+            number = Number(number);
+
+            const randomNumber = Math.ceil(Math.random() * 10);
+
+            if(number === randomNumber){
+                alert("Congratulations!!!! You Guessed the right number");
+                break;
+            }else{
+                console.log("you guessed", number, "but the right answer was", randomNumber);
+
+            }
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
